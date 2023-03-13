@@ -1,0 +1,3 @@
+SELECT member.memNickName,games.gamesName,comment.sid,comment.rate,comment.comment,comment.pics,comment.create_at FROM comment
+JOIN member ON member.membersid=comment.user_id
+JOIN games ON games.gamesSid=comment.games_id
